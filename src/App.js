@@ -1,23 +1,32 @@
-import logo from './logo.svg';
+import axios from 'axios';
 import './App.css';
+import React from 'react'
+import { useState, useEffect } from 'react'
+import { Routes, Route, useNavigate, Navigate } from 'react-router-dom'
+
+import HomePage from './pages/HomePage';
+import AllBeers from './pages/AllBeers';
+import RandomBeer from './pages/RandomBeer';
+import NewBeer from './pages/NewBeer';
+import BeerDetails from './pages/BeerDetails';
+import NavBar from './components/NavBar';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <NavBar></NavBar>
+
+    <Routes>
+      <Route path='/' element={<HomePage />} />
+      <Route path="/Beers" element={<AllBeers />} />
+      <Route path="/RandomBeer" element={<RandomBeer />} />
+      <Route path="/NewBeer" element={<NewBeer />} />
+      <Route path="/Beers/:id" element={<BeerDetails />} />
+
+    </Routes>
+
     </div>
   );
 }
