@@ -21,13 +21,18 @@ const random = randomBeer[Math.floor(Math.random()*randomBeer.length)]
     <div>
     {random &&
     <div>
-        <img style={{width:"40px"}} src={random.image_url} alt="beer-img"></img>
-        <h1>{random.name}</h1>
-        <p>{random.tagline}</p>
-        <p>First brewed : {random.first_brewed}</p>
-        <p>Attenuation level : {random.attenuation_level}</p>
-        <p>{random.description}</p>
-        <p>Contributed by : {random.contributed_by} </p>
+        <h1 className='mt-4'>{random.name}</h1>
+        <img className='my-5' style={{width:"40px"}} src={random.image_url} alt="beer-img"></img>
+
+        <div className='details'>
+          <p>{random.tagline}</p>
+          <p>First brewed : {random.first_brewed}</p>
+          <p>Attenuation level : {random.attenuation_level}</p>
+          <p>{random.description}</p>
+          <p>Contributed by : {random.contributed_by} </p>
+        </div>
+        
+        
         <Link to={'/'}> Back</Link>
     </div>
           

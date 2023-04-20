@@ -66,25 +66,46 @@ function NewBeer() {
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
+      <h1 className='mt-5'>Add a new beer!</h1>
+      <form className='newbeer' onSubmit={handleSubmit}>
+        <div className='label'>
           <label>Name : </label>
           <input onChange={handleNameChange} value={name} />
+        </div>
+        <div className='label'>
           <label>Tagline : </label>
           <input onChange={handleTaglineChange} value={tagline} />
+        </div>
+        <div className='label'>
           <label>Description : </label>
           <input onChange={handleDescriptionChange} value={description} />
+            
+        </div>
+        <div className='label'>
           <label>First brewed : </label>
           <input onChange={handleFirst_brewedChange} value={first_brewed} />
+        </div>
+        <div className='label'>
           <label>Brewers tips : </label>
           <input onChange={handleBrewers_tipsChange} value={brewers_tips} />
+        </div>
+        <div className='label'>
           <label>Attenuation level : </label>
           <input onChange={handleAttenuation_levelChange} value={attenuation_level} />
+        </div>
+        <div className='label'>
           <label>Contributed by : </label>
           <input onChange={handleContributed_byChange} value={contributed_by} />
+        </div>
+        <div className='label'>
           <label>Image : </label>
           <input onChange={handleImageChange} value={image} />
+        </div>
+        <div className='button'>
+          <button className='add' type='submit'>Add</button>
+        </div>
 
-          <button type='submit'>Add</button>
+        
 
       </form>
     </div>

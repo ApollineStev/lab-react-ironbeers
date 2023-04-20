@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom'
 
 function NavBar() {
   return (
-    <div className='' >
-        <h2>Welcome to Ironbeers!!!</h2>
-        <Link to={'/'}>Home</Link>
-    </div>
+    <nav className='navbar' >
+        
+        <Link className='text-decoration-none text-light mt-2' style={{color: "rgb(175, 164, 149)"}} to={'/'}>Home</Link>
+    </nav>
   )
 }
 

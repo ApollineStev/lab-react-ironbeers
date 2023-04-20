@@ -20,9 +20,21 @@ function BeerDetails() {
     <div>
         {beer && 
         <div>
-            <h1>{beer.name}</h1>
-            <img style={{width:"40px"}} src={beer.image_url} alt="beer-img"></img>
+
+            <h1 className='mt-4'>{beer.name}</h1>
+            <img className='my-5' style={{width:"60px"}} src={beer.image_url} alt="beer-img"></img>
+
+            <div className='details'>
+                <h5>{beer.tagline}</h5>
+                <p>First brewed : {beer.first_brewed}</p>
+                <p>Attenuation level : {beer.attenuation_level}</p>
+                <p>{beer.description}</p>
+                <p>Contributed by : {beer.contributed_by} </p>
+            </div>
+            
+        
             <Link to={'/Beers'}> Back</Link>
+
         </div>
         
         }

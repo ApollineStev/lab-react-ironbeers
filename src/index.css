@@ -11,3 +11,87 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.navbar {
+  display: flex;
+  background-color: rgb(24, 144, 144);
+  justify-content: center;
+}
+
+.navbar > h2 {
+  color: rgb(218, 206, 188);
+  margin: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.homecard {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.presentation {
+  text-align: left;
+  margin: 2rem;
+}
+
+.beerlist {
+  display: flex;
+  margin: 3rem;
+  text-align: left;
+  align-items: center;
+  border-bottom: solid 1px gray;
+  padding-bottom: 2rem;
+}
+
+.allpresentation {
+  margin-left: 3rem;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 45rem;
+  margin-left: 25%;
+}
+
+.newbeer {
+  display: flex;
+  flex-direction: column;
+}
+
+.newbeer > div {
+  margin: 2rem;
+  text-align: left;
+  width: 75%;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+}
+
+.label > input {
+  border-radius: 8px;
+}
+
+.label > label {
+
+  margin-bottom: 1em;
+}
+
+.add {
+  width: 15rem;
+  height: 3rem;
+  background-color:rgb(24, 144, 144) ;
+  border:none;
+  border-radius: 8px;
+  color: aliceblue;
+  font-size: large;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}

@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
 
-    <NavBar></NavBar>
+    <NavBar />
 
     <Routes>
       <Route path='/' element={<HomePage />} />
@@ -24,7 +24,6 @@ function App() {
       <Route path="/RandomBeer" element={<RandomBeer />} />
       <Route path="/NewBeer" element={<NewBeer />} />
       <Route path="/Beers/:id" element={<BeerDetails />} />
-
     </Routes>
 
     </div>
